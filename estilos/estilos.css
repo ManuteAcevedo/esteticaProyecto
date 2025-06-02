@@ -1,0 +1,266 @@
+/*RESET DE CSS*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Georama", sans-serif;
+}
+
+/*ESTILOS GENERALES*/
+
+/*descativada
+.tituloResaltado{
+    color: white;          
+    background-color: rgb(48, 62, 72);  
+    display: inline-block;   
+    text-align: center;
+}*/
+
+p{
+    color:rgb(48, 62, 72);
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body{
+    background: radial-gradient(circle, #80baf4 0%, #8f9ba4 100%);
+}
+
+
+.navHeader ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.textoCentrado{
+    text-align: center;
+}
+
+/*desactivada
+.espaciadoSeccion{
+    margin-bottom: 50px;
+}*/
+
+.negrita{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(48, 62, 72);
+}
+
+.itemsLista{
+    list-style-type: circle; 
+    padding-left: 20px;
+}
+
+.tituloSeccion{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(48, 62, 72);
+}
+
+.botonesColor{
+    background-color:rgb(136, 198, 246);
+    border: 0.5px solid rgb(154, 146, 146);
+    width: 12rem; 
+    font-weight: bold   
+}
+
+.botonesColor:hover {
+    background-color: #a3d8ff;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*HEADER*/
+
+.headerBackground{
+    background-image: url(../img/img-portada-f.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+}
+
+.headerContainer {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* sombra hacia abajo */
+  position: relative;
+  z-index: 1;
+}
+
+/*.headerContainer{
+    background-image: url(../img/img-portada-f.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}*/
+
+.tituloHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+/*Mueve el resto de los elementos abajo*/
+.oscurecerFondo{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.305);
+}
+/*clase encerrada en un div*/
+
+/*border solo para verlo no aplica en esta imagen*/
+.logoHeader{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navHeader ul{
+    list-style: none;
+    display: flex;
+    gap:1.5rem;
+}
+
+.contenedorSuperiorHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tituloHeader{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 0rem;
+}
+
+ /*OPCION 1
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  text-align: center;*/
+
+  /*OPCION 2 meter h1 en div
+  .headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem;}
+  .tituloHeaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* ocupa el espacio disponible }
+  .tituloHeader {
+  font-size: 2rem;
+  color: white;
+  text-align: center;}*/
+
+.colorEnlace{
+    color: white;
+    text-decoration: none;
+}
+
+/*desactivada
+.contenedorPortada{
+    width: 40rem;
+}*/
+
+/*MAIN*/
+
+.multimediaTam{
+    width: 100%;
+}
+
+.contenedorImagen{
+    width: 15rem;
+}
+
+.nombreDr{
+    color: rgb(48, 62, 72);
+}
+
+.descripcionDr{
+    font-size: 1rem;
+}
+
+.precioProducto span{
+    text-decoration: line-through;
+    color:red
+}
+
+.botonComprar{
+    display: inline-block; 
+    background-color: rgb(177, 231, 252);
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem; 
+    border-radius: 0.3rem;
+    cursor: pointer;
+    white-space: nowrap; 
+    transition: background-color 0.3s;
+}
+
+.contenedorCosas{
+    display: flex;
+    justify-content: space-around; /* o center */
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.botonConsulta {
+    display: inline-block;
+    padding: 0.4rem 1rem;  
+    font-size: 0.9rem;     
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: rgb(48, 62, 72);
+}
+
+.botonConsulta:hover {
+    background-color: #a3d8ff;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: rgba(5, 93, 93, 0.208);
+    color:aquamarine;
+    padding: 1rem;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.3); /* sombra hacia arriba */
+    position: relative;
+    z-index: 1;
+}
+
+.botonesColorFooter{
+    background-color:rgba(108, 211, 192, 0.534);
+    border: 0.5px solid rgb(154, 146, 146);
+    width: 12rem; 
+    font-weight: bold 
+}

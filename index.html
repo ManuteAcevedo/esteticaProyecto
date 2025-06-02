@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./estilos/estilos.css">
+     <!-- Fuente de Letra -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Titulo Ventana-->
+    <title>CME ER</title>  
+</head>
+
+<body>
+
+ <div class="wrapper">
+
+    <header class="headerBackground headerContainer">
+
+     <!-- Oscurecer Fondo -->
+     <div class="oscurecerFondo">
+
+     <div class="contenedorSuperiorHeader">
+              
+        <!-- Logo esquinado -->
+        <img class="logoHeader" src="./img/img-logo-esquina.png" alt="Logo de CME">
+        
+        <!-- Bloque de Navegación -->  
+        <nav class="navHeader">
+            <ul> 
+                <!-- Enlace Interno -->
+                <li><a href="#profesionales" class="colorEnlace">Profesionales</a></li>
+                <li><a href="#tratamientos" class="colorEnlace">Tratamientos</a></li>
+                <!-- Enlaces relativos -->
+                <li><a href="./paginas/contacto.html" class="colorEnlace">Contacto</a></li>
+                <!-- Enlace a otra pestaña -->
+                <li><a target="_blank" href="./paginas/tienda.html" class="colorEnlace">Tienda</a></li>
+            </ul>
+        </nav>
+
+     </div>
+
+     <div class="tituloHeaderContainer">
+        <h1 class="tituloHeader textoCentrado">CENTRO DE MEDICINA ESTÉTICA</h1>
+     </div>
+     </div>
+               
+        
+    </header>
+  
+    <main> 
+        
+         <!-- Titulo Profesionales -->
+         <h2 id="profesionales" class="tituloSeccion textoCentrado">¿QUIENES SOMOS?</h2>
+         <h2 class="textoCentrado negrita">Nuestros Profesionales</h2>
+         
+
+         
+        <div class="contenedorCosas">
+
+        <section class="contenedorImagen">
+            <img class="multimediaTam" src="./img/img-med1.png" alt="Foto de Doctora NOMBRE1">
+            <h3 class="nombreDr">Dra. NOMBRE1</h3>
+            <p class="descripcionDr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsa ducimus eos facilis aut suscipit sequi maxime eveniet! Officiis harum odit voluptatum amet quia numquam sit totam iste omnis nihil accusamus sapiente necessitatibus, consequuntur, quas eligendi! Vel voluptas blanditiis consequuntur.</p>
+            
+            <a href="./paginas/contacto.html" class="botonesColor botonConsulta">HACÉ TU CONSULTA</a>
+
+        </section>
+
+        <section class="contenedorImagen">
+            <img class="multimediaTam" src="./img/img-med2.png" alt="Foto de Doctor NOMBRE2">
+            <h3 class="nombreDr">Dr. NOMBRE2</h3>
+            <p class="descripcionDr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsa ducimus eos facilis aut suscipit sequi maxime eveniet! Officiis harum odit voluptatum amet quia numquam sit totam iste omnis nihil accusamus sapiente necessitatibus, consequuntur, quas eligendi! Vel voluptas blanditiis consequuntur.</p>
+         
+            <a href="./paginas/contacto.html" class="botonesColor botonConsulta">HACÉ TU CONSULTA</a>
+
+        </section> 
+
+
+        <section class="contenedorImagen">
+            <img class="multimediaTam" src="./img/img-med3.png" alt="Foto de Doctor NOMBRE3">
+            <h3 class="nombreDr">Dr. NOMBRE3</h3>
+            <p class="descripcionDr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsa ducimus eos facilis aut suscipit sequi maxime eveniet! Officiis harum odit voluptatum amet quia numquam sit totam iste omnis nihil accusamus sapiente necessitatibus, consequuntur, quas eligendi! Vel voluptas blanditiis consequuntur.</p>
+         
+            <a href="./paginas/contacto.html" class="botonesColor botonConsulta">HACÉ TU CONSULTA</a>
+        
+        </section> 
+
+        </div>
+
+        <!-- Titulo Tratamientos -->
+        <h2 id="tratamientos" class="tituloSeccion textoCentrado">TRATAMIENTOS</h2>
+        <h2 class="textoCentrado negrita">Nuestros Servicios</h2>
+
+            <!-- Clasificación de Tratamientos -->
+            <!-- Falta alinearlos horizontalmente -->
+        
+        <div class="contenedorCosas">
+        
+        <section class="contenedorImagen">
+            <!-- Imagen Tratamientos Faciales -->
+            <img class="multimediaTam" src="./img/img-dermapen.png" alt="Imagen de ejemplo tratamiento facial">
+            
+            <!-- Titulo imagen -->
+            <h3 class="nombreDr">FACIALES</h3>
+            
+            <!-- Lista de Tratamientos -->
+            <ul class="itemsLista">
+                <li>Dermapen</li>
+                <li>Plasma Rico en Plaquetas</li>
+                <li>Mesoterapia</li>
+                <li>Skin Booster</li>
+                <li>Peeling Químico</li>
+            </ul>
+
+            <!-- Enlace a otra pestaña -->
+            <a target="_blank" href="./paginas/facialDr.html" class="botonesColor botonConsulta">Conocer Tratamientos</a>
+
+        </section>
+
+        <section class="contenedorImagen">
+            <!-- Imagen Tratamientos Corporales -->
+            <img class="multimediaTam" src="./img/img-meso.png" alt="Imagen de ejemplo tratamiento corporal">
+                        
+            <!-- Titulo imagen -->
+            <h3 class="nombreDr">CORPORALES</h3>
+            
+            <!-- Lista de Tratamientos -->
+            <ul class="itemsLista">
+                <li>Ultasonido</li>
+                <li>Mesoterapia</li>
+                <li>Escleroterapia</li>
+                <li>Peeling</li>
+                <li>Fosfatidilcolina</li>
+            </ul>
+
+            <!-- Enlace a otra pestaña -->
+            <a target="_blank" href="./paginas/corporalDr.html" class="botonesColor botonConsulta">Conocer Tratamientos</a>
+
+        </section> 
+
+        </div>
+
+    </main>
+ </div>
+
+    <footer>
+        <!-- Enlaces Absolutos Redes Sociales -->
+        <a href="https://instagram.com" class="botonesColorFooter botonConsulta">Instagram</a>
+        <a href="https://whatsapp.com" class="botonesColorFooter botonConsulta">WhatsApp</a> 
+    </footer>
+
+</body>
+</html>

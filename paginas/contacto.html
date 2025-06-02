@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+     <!-- Fuente de Letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Titulo Ventana-->
+    <title>CME Contacto</title>  
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+    <header class="headerBackground headerContainer">
+    
+     <!-- Oscurecer Fondo -->
+     <div class="oscurecerFondo">
+
+     <div class="contenedorSuperiorHeader">
+              
+        <!-- Logo esquinado -->
+        <img class="logoHeader" src="../img/img-logo-esquina.png" alt="Logo de CME">
+
+        <!-- Bloque de Navegación --> 
+         <nav class="navHeader">
+            <ul> 
+                <!-- Enlaces relativos -->
+                <li><a href="../index.html" class="colorEnlace">Inicio</a></li>
+                <!-- Enlace a otra pestaña -->
+                <li><a target="_blank" href="../paginas/tienda.html" class="colorEnlace">Tienda</a></li>
+            </ul>
+       </nav>
+
+     </div>
+
+     <div class="tituloHeaderContainer">
+        <h1 class="tituloHeader textoCentrado">CENTRO DE MEDICINA ESTÉTICA</h1>
+     </div>
+     </div>
+    </header>
+    
+    <main> 
+       
+         <!-- Titulo Principal -->
+         <h2 class="tituloSeccion textoCentrado">CONTACTO</h2>
+         <h2 class="textoCentrado espaciadoSeccion negrita">Consultorios</h2>
+
+         <div class="contenedorCosas">
+
+         <!-- Imagen localizacion -->
+         <section class="contenedorImagen">
+            <img class="multimediaTam" src="../img/img-cons-pna.png" alt="Imagen consultorio Paraná">
+            <h3 class="nombreDr">PARANÁ</h3>
+            <p class="descripcionDr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi dicta repellendus labore! Cupiditate, possimus.</p>
+         </section>
+
+         <!-- Imagen localizacion -->
+         <section class="contenedorImagen">
+            <img class="multimediaTam" src="../img/img-cons-sf.png" alt="Imagen Consultorio Santa Fé">
+            <h3 class="nombreDr">SANTA FÉ</h3>
+            <p class="descripcionDr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti, dignissimos unde ab similique eius?</p>
+         </section>
+
+        
+
+         <section class="contenedorImagen">
+            <h3 class="nombreDr">CONSULTAS</h3>
+
+            <!--Formulario Contacto--> 
+            <!--Cambiar submit para el destino-->
+             
+            <form action="/submit" method="post">
+
+                
+                <label for="suscribe">Turnos</label>
+                <input type="checkbox" name="suscribe" id="suscribe">
+
+                <label for="suscribe1">Tienda</label>
+                <input type="checkbox" name="suscribe1" id="suscribe1">
+
+                <label for="suscribe2">Otro</label>
+                <input type="checkbox" name="suscribe2" id="suscribe2"><br><br>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre"><br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="text" name="email" id="email"><br><br>
+
+                <label for="mensaje">Descripción:</label>
+                <textarea id="mensaje" name="mensaje" ></textarea> 
+                
+                <input type="submit" value="Enviar">
+               
+            </form>
+         </section>
+        
+         </div>
+
+    </main>
+    </div>
+
+   <footer>
+        <!-- Enlaces Absolutos Redes Sociales -->
+        <a href="https://instagram.com" class="botonesColorFooter botonConsulta">Instagram</a>
+        <a href="https://whatsapp.com" class="botonesColorFooter botonConsulta">WhatsApp</a> 
+    </footer>
+
+</body>
+</html>
