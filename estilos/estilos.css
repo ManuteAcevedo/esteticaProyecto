@@ -297,7 +297,7 @@ footer{
 }
 
 
-/* Menú hamburguesa siempre en la esquina derecha*/
+
 .navbar .container-fluid {
   display: flex;
   justify-content: space-between;
@@ -320,6 +320,12 @@ footer{
   position: relative;
   z-index: 3;
 }
+
+.navbar-collapse.show {
+  background-color: rgba(71, 70, 70, 0.2);
+  padding: 1rem;
+}
+
 
 
 /* TABLET */
