@@ -296,8 +296,7 @@ footer{
     font-weight: bold 
 }
 
-
-
+/*CONFIGURACIÓN NAVBAR*/
 .navbar .container-fluid {
   display: flex;
   justify-content: space-between;
@@ -322,11 +321,36 @@ footer{
 }
 
 .navbar-collapse.show {
-  background-color: rgba(71, 70, 70, 0.2);
-  padding: 1rem;
+  background-color: rgba(35, 32, 32, 0.875);
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.588);
 }
 
-
+/* CELULAR */
+/* El contenedor pone el navbar pegado al logo */
+@media (min-width: 320px){
+      .navHeader ul{
+        flex-direction: row;
+        justify-content: center; 
+        gap: 1rem;
+  } 
+      .navbar-collapse .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+  }
+      .navbar-collapse.show {
+        padding: 0.5rem;
+  }
+      .contenedorSuperiorHeader{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem;
+  }
+}
 
 /* TABLET */
 @media (min-width: 600px){
@@ -334,9 +358,20 @@ footer{
         flex-direction: row;
         justify-content: center; 
         gap: 1rem;
-    } 
+  } 
+      .navbar-collapse .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+  }
+      .navbar-collapse.show {
+        padding: 0.5rem;
+  }
+      .contenedorSuperiorHeader{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem;
+  }
 }
-
 
 /* DESKTOP */
 @media (min-width: 1020px){
