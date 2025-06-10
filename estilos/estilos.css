@@ -9,14 +9,6 @@
 
 /*ESTILOS GENERALES*/
 
-/*descativada
-.tituloResaltado{
-    color: white;          
-    background-color: rgb(48, 62, 72);  
-    display: inline-block;   
-    text-align: center;
-}*/
-
 p{
     color:rgb(48, 62, 72);
     font-style: italic;
@@ -36,10 +28,6 @@ a{
     text-align: center;
 }
 
-/*desactivada
-.espaciadoSeccion{
-    margin-bottom: 50px;
-}*/
 
 .negrita{
     font-size: 1.8rem;
@@ -87,7 +75,7 @@ main {
 
 .headerBackground{
     position: relative;
-    height: 60vh; /* o 70vh si querés más espacio */
+    height: 60vh; 
     background-image: url(../img/img-portada-f.jpeg);
     background-size: cover;
     background-position: center;
@@ -96,7 +84,7 @@ main {
 
 .headerBackground {
     position: relative;
-    height: 60vh; /* o 70vh si querés más espacio */
+    height: 60vh; 
     background-image: url(../img/img-portada-f.jpeg);
     background-size: cover;
     background-position: center;
@@ -104,24 +92,11 @@ main {
 }
 
 .headerContainer {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* sombra hacia abajo */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
 }
 
-/*.headerContainer{
-    background-image: url(../img/img-portada-f.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 70vh;
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
-}*/
 
 .tituloHeaderContainer {
     display: flex;
@@ -131,14 +106,11 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* CENTRADO PERFECTO */
+    transform: translate(-50%, -50%); 
     text-align: center;
     z-index: 2;
 }
 
-
-
-/*Mueve el resto de los elementos abajo*/
 .oscurecerFondo{
     width: 100%;
     height: 100%;
@@ -148,9 +120,6 @@ main {
 }
 
 
-/*clase encerrada en un div*/
-
-/*border solo para verlo no aplica en esta imagen*/
 .logoHeader{
     width: 5rem;
     height: 5rem;
@@ -184,41 +153,11 @@ main {
 }
 
 
- /*OPCION 1
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  color: white;
-  text-align: center;*/
-
-  /*OPCION 2 meter h1 en div
-  .headerContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  padding: 2rem;}
-  .tituloHeaderContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1; /* ocupa el espacio disponible }
-  .tituloHeader {
-  font-size: 2rem;
-  color: white;
-  text-align: center;}*/
-
 .colorEnlace{
     color: white;
     text-decoration: none;
 }
 
-/*desactivada
-.contenedorPortada{
-    width: 40rem;
-}*/
 
 /*MAIN*/
 
@@ -331,7 +270,7 @@ footer{
 }
 
 /* CELULAR */
-/* El contenedor pone el navbar pegado al logo */
+
 @media (min-width: 320px){
       .navHeader ul{
         flex-direction: row;
@@ -372,19 +311,6 @@ footer{
         padding: 1.5rem;
   }
 }
-
-/* DESKTOP */
-@media (min-width: 1020px){
-    .navHeader ul{
-        gap:1.5rem;
-    }
-    .contenedorSuperiorHeader{
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1.5rem;
-    }
-}
-
 
 
 
