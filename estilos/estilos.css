@@ -64,7 +64,7 @@ main {
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 0.5rem;
     padding: 1rem;
-    background-color: rgba(105, 197, 233, 0.527); /* leve fondo blanco */
+    background-color: rgba(105, 197, 233, 0.527); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 20rem;
 }
@@ -78,6 +78,15 @@ main {
     background-position: center;
     overflow: hidden;
 }
+
+.tituloHeader {
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      background-color:  rgba(177, 231, 252, 0.132);
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+    }
 
 .oscurecerFondo {
     width: 100%;
@@ -98,7 +107,7 @@ main {
   align-items: center;
   justify-content: flex-start !important;
   gap: 1rem;
-  padding-left: 0;  /* quitar padding para que quede en la esquina */
+  padding-left: 0;  
 }
 
 .logoHeader {
@@ -108,12 +117,6 @@ main {
   object-fit: cover;
   margin: 0;
   padding: 0;
-}
-
-.tituloHeader {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
 }
 
 .tituloHeaderContainer {
