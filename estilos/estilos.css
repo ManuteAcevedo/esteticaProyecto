@@ -90,7 +90,7 @@ main {
   margin: 0 auto;
   padding: 1rem;
   box-sizing: border-box;
-  margin-bottom: 3rem; /* Aumentá este valor si querés más espacio */
+  margin-bottom: 3rem; 
 }
 
 .formularioConsultas input[type="text"],
@@ -109,7 +109,7 @@ main {
 
 form input[type="submit"] {
   display: block;
-  margin: 0.1rem auto 0 auto; /* margen superior más pequeño para acercar */
+  margin: 0.1rem auto 0 auto; 
 }
 
 /* HEADER */
@@ -245,13 +245,6 @@ footer {
   text-align: center;           
 }
 
-
-@media (max-width: 600px) {
-  footer {
-    flex-direction: column;     
-  }
-}
-
 .botonesColorFooter {
   background-color: rgba(108, 211, 192, 0.534);
   border: 0.5px solid rgb(154, 146, 146);
@@ -333,7 +326,7 @@ footer {
   width: 100%;
 }
 
-
+/* MEDIA QUERIES */
 
 @media (max-width: 480px) {
   .carousel-caption {
@@ -344,9 +337,6 @@ footer {
   }
 }
 
-
-/* MEDIA QUERIES */
-/* TABLET Y MOVIL */
 @media (max-width: 600px) {
   .navbar-collapse.show {
     position: absolute;
@@ -368,6 +358,11 @@ footer {
     margin-top: 5rem;
     text-align: center;
   }
+
+  footer {
+    flex-direction: column;     
+  }
+
 }
 
 /*# sourceMappingURL=estilos.css.map */
