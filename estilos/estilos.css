@@ -26,6 +26,10 @@ body {
   background: radial-gradient(circle, #80baf4 0%, #8f9ba4 100%);
 }
 
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
 p {
   color: rgb(48, 62, 72);
   font-style: italic;
@@ -174,6 +178,7 @@ form input[type="submit"] {
 /* MAIN */
 .multimediaTam {
   width: 100%;
+  margin-bottom: 0.5rem; /* espacio debajo de la imagen */
 }
 
 .contenedorImagen {
@@ -194,7 +199,6 @@ form input[type="submit"] {
 }
 
 .botonComprar {
-  display: inline-block;
   background-color: rgb(177, 231, 252);
   border: 1px solid black;
   font-weight: bold;
@@ -203,6 +207,21 @@ form input[type="submit"] {
   cursor: pointer;
   white-space: nowrap;
   transition: background-color 0.3s;
+}
+
+.descripcionProducto {
+  min-height: 7rem; /* fijar altura mínima para que todas tengan espacio similar */
+  margin-bottom: 0.5rem;
+  color: rgb(48, 62, 72);
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.botonesContenedor {
+  display: flex;
+  gap: 0.5rem; /* espacio entre botones */
+  justify-content: center; /* opcional, para centrar */
+  flex-wrap: nowrap; /* que no se pongan en columna */
 }
 
 .botonConsulta {
@@ -226,7 +245,10 @@ form input[type="submit"] {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-top: 1rem; /* separa hacia arriba */
+
 }
+
 
 /* FOOTER */
 footer {
@@ -361,6 +383,29 @@ footer {
 
   footer {
     flex-direction: column;     
+  }
+  
+  .contenedorImagen {
+    width: 100%; /* ocupa todo el ancho disponible */
+    max-width: 15rem; /* no muy grande */
+    margin: 0.5rem auto 2rem auto;
+  }
+
+  .descripcionProducto {
+    min-height: auto; /* que se adapte al texto */
+    margin-bottom: 0.5rem;
+  }
+
+  .botonesContenedor {
+    flex-direction: column; /* apilar botones verticalmente */
+    gap: 0.3rem;
+    align-items: stretch;
+  }
+
+  .botonComprar {
+    width: 100%; /* botones anchos al 100% */
+    padding: 0.5rem;
+    font-size: 1rem;
   }
 
 }
