@@ -10,7 +10,7 @@
  <link rel="stylesheet" href="./estilos/estilos.css">
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,36 +69,40 @@
  <main> 
    <h2 id="quienes-somos" class="tituloSeccion textoCentrado animate__animated animate__backInUp">¿QUIENES SOMOS?</h2>
   <h2 id="profesionales" class="tituloSeccion textoCentrado animate__animated animate__backInUp">Nuestros Profesionales</h2>
-   <div class="contenedorCosas">
-     <section class="contenedorImagen">
-       <img class="multimediaTam" src="./img/img-med1.png" alt="Foto de Doctora Laura Lopez, médica estética">
-       <h3 class="nombreDr">Dra. Laura Lopez</h3>
-       <div class="descripcionDr">
-          <p>MAT:01010 - Médica estética apasionada por realzar la belleza natural con tratamientos personalizados. Especialista en tratamientos faciales.</p>
-        </div>
-        <div class="botonesContenedor">
-            <a href="./paginas/contacto.html" class="botonesColor botonConsulta">HACÉ TU CONSULTA</a>
-        </div>     </section>
-     <section class="contenedorImagen">
-        <img class="multimediaTam" src="./img/img-med2.png" alt="Foto de Doctor Juan Lopez, médico estético">
-        <h3 class="nombreDr">Dr. Juan Lopez</h3>
-        <div class="descripcionDr">
-          <p>MAT:11111 - Médico estético especializado en tratamientos corporales. Su enfoque integral combina ciencia, arte y tecnología brindando seguridad y perfección.</p>
-        </div>
-        <div class="botonesContenedor">
-            <a href="./paginas/contacto.html" class="botonesColor botonConsulta">HACÉ TU CONSULTA</a>
-        </div>     </section> 
-     <section class="contenedorImagen">
-        <img class="multimediaTam" src="./img/img-med3.png" alt="Foto de Doctor María Gimenez, médica estética">
-        <h3 class="nombreDr">Dr. María Gimenez</h3>
-        <div class="descripcionDr">
-          <p>MAT:22222 - Médica estética enfocada en armonía facial y rejuvenecimiento. Con amplia experiencia ofrece soluciones seguras y efectivas para sus pacientes.</p>
-        </div>
-        <div class="botonesContenedor">
-            <a href="./paginas/contacto.html" class="botonesColor botonConsulta">HACÉ TU CONSULTA</a>
-        </div>
-     </section> 
-   </div>
+  <div class="contenedorCosas">
+  <section class="contenedorImagen" data-aos="fade-up" data-aos-delay="300">
+    <img class="multimediaTam" src="./img/img-med1.png" alt="Foto de Doctora Laura Lopez, médica estética">
+    <h3 class="nombreDr">Dra. Laura Lopez</h3>
+    <div class="descripcionDr">
+      <p>MAT:01010 - Médica estética apasionada por realzar la belleza natural con tratamientos personalizados. Especialista en tratamientos faciales.</p>
+    </div>
+    <div class="botonesContenedor">
+      <a href="./paginas/contacto.html" class="botonesColor botonConsulta">HACÉ TU CONSULTA</a>
+    </div>
+  </section>
+
+  <section class="contenedorImagen" data-aos="fade-up" data-aos-delay="300">
+    <img class="multimediaTam" src="./img/img-med2.png" alt="Foto de Doctor Juan Lopez, médico estético">
+    <h3 class="nombreDr">Dr. Juan Lopez</h3>
+    <div class="descripcionDr">
+      <p>MAT:11111 - Médico estético especializado en tratamientos corporales. Su enfoque integral combina ciencia, arte y tecnología brindando seguridad y perfección.</p>
+    </div>
+    <div class="botonesContenedor">
+      <a href="./paginas/contacto.html" class="botonesColor botonConsulta">HACÉ TU CONSULTA</a>
+    </div>
+  </section> 
+
+  <section class="contenedorImagen" data-aos="fade-up" data-aos-delay="300">
+    <img class="multimediaTam" src="./img/img-med3.png" alt="Foto de Doctor María Gimenez, médica estética">
+    <h3 class="nombreDr">Dr. María Gimenez</h3>
+    <div class="descripcionDr">
+      <p>MAT:22222 - Médica estética enfocada en armonía facial y rejuvenecimiento. Con amplia experiencia ofrece soluciones seguras y efectivas para sus pacientes.</p>
+    </div>
+    <div class="botonesContenedor">
+      <a href="./paginas/contacto.html" class="botonesColor botonConsulta">HACÉ TU CONSULTA</a>
+    </div>
+  </section> 
+</div>
 
   <h2 id="tratamientos" class="tituloSeccion textoCentrado animate__animated animate__backInUp">TRATAMIENTOS</h2>
   <h2 id="servicios" class="tituloSeccion textoCentrado animate__animated animate__backInUp">Nuestros Servicios</h2>
@@ -143,7 +147,12 @@
     <p class="mb-0 ms-2 text-black"> Contacto - &copy; 2025</p>
 </footer>
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
