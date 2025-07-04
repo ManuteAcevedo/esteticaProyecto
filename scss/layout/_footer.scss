@@ -1,0 +1,20 @@
+/* FOOTER */
+footer {
+  background-color: rgba(5, 93, 93, 0.208);
+  color: aquamarine;
+  padding: 1rem;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-wrap: wrap;               
+  justify-content: center;      
+  align-items: center;           
+  gap: 1rem;                     
+  text-align: center;           
+}
+
+.botonesColorFooter {
+  @include boton-estilo(rgba(108, 211, 192, 0.534), 6rem);
+}

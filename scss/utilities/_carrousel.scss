@@ -1,0 +1,15 @@
+/* Carrousel */
+#carouselSedes {
+  margin: 5rem auto;
+  max-width: 70%;
+}
+
+.carousel-caption {
+  bottom: 1.5rem; 
+}
+
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}

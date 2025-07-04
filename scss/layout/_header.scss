@@ -1,0 +1,71 @@
+/* HEADER */
+.headerBackground {
+  position: relative;
+  height: 60vh;
+  background-image: url(../img/img-portada-f.jpeg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.oscurecerFondo {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.305);
+  position: absolute;
+  inset: 0;
+}
+
+.headerContainer {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.contenedorSuperiorHeader nav .container-fluid {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start !important;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+.logoHeader {
+  width: 5rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.tituloHeaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.colorEnlace {
+  color: white;
+  text-decoration: none;
+}
+
+$primary-color: rgba(177, 231, 252, 0.132);
+$color-blanco: #fff;
+
+
+
+@charset "UTF-8";
+
+header .tituloHeaderContainer h1 {
+  @extend %estilo-titulo-header;
+  @include fondo-titulo($primary-color, $color-blanco, 0.5rem, 0.5rem);
+  font-size: 2.5rem;
+}

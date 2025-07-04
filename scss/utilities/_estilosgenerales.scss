@@ -1,0 +1,92 @@
+/* ESTILOS GENERALES */
+body {
+  background: radial-gradient(circle, #80baf4 0%, #8f9ba4 100%);
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  color: rgb(48, 62, 72);
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.textoCentrado {
+  text-align: center;
+}
+
+.negrita {
+  @extend %titulo-seccion;
+  font-style: normal;    
+  color: rgb(30, 50, 70); 
+  text-transform: uppercase;  
+  letter-spacing: 1px;      
+}
+
+.tituloSeccion {
+  @extend %titulo-seccion;
+}
+
+.itemsLista {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+.botonesColor {
+  @include boton-estilo(rgb(136, 198, 246), 12rem);
+}
+
+.botonesColor:hover {
+  background-color: #a3d8ff;
+  cursor: pointer;
+}
+
+.formularioConsultas {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: rgba(105, 197, 233, 0.527);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 20rem;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 3rem; 
+}
+
+.formularioConsultas input[type="text"],
+.formularioConsultas input[type="email"],
+.formularioConsultas textarea {
+  @extend %campo-formulario;
+}
+
+form input[type="submit"] {
+  display: block;
+  margin: 0.1rem auto 0 auto; 
+}
+
+.descripcionContenido {
+  margin-bottom: 0.5rem;
+  color: rgb(48, 62, 72);
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: left; 
+}

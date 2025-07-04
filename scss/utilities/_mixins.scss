@@ -1,0 +1,16 @@
+@mixin boton-estilo($bg-color, $width: auto) {
+  background-color: $bg-color;
+  border: 0.5px solid rgb(154, 146, 146);
+  font-weight: bold;
+  width: $width;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@mixin fondo-titulo($fondo, $color, $padding, $radius) {
+  color: $color;
+  background-color: $fondo;
+  padding: $padding;
+  border-radius: $radius;
+  font-weight: bold;
+}

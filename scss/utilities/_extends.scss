@@ -1,0 +1,23 @@
+%estilo-titulo-header {
+  text-align: center;
+  font-family: "Istok Web", sans-serif;
+  font-weight: bold;
+}
+
+%titulo-seccion {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(48, 62, 72);
+}
+
+%campo-formulario {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical;
+}

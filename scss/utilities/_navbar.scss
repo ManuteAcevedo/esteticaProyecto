@@ -1,0 +1,68 @@
+/* CONFIGURACIÓN NAVBAR */
+.navHeader ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin: 0;
+  position: relative;
+  z-index: 3;
+}
+
+.navbar .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-toggler {
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  width: auto;
+  max-width: 300px;
+  background-color: rgba(35, 32, 32, 0.875); 
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.588);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-collapse.show {
+  opacity: 1;
+  pointer-events: auto;
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  width: auto;
+  max-width: 300px;
+  background-color: rgba(35, 32, 32, 0.875);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.588);
+  z-index: 1000;
+}
