@@ -1,12 +1,14 @@
-@import "./utilities/extends"
-@import "./utilities/mixins"
-@import "./utilities/estilosgenerales"
-@import "./utilities/carrousel"
-@import "./utilities/navbar"
-@import "./layout/footer"
-@import "./layout/header"
-@import "./layout/main"
-@import "./mq/mediaqueries"
+@import "./utilities/extends";
+@import "./utilities/mixins";
+@import "./utilities/estilosgenerales";
+@import "./utilities/carousel";
+@import "./utilities/navbar";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/main";
+
+@import "./mq/mediaqueries";
 
 
 /* RESET DE CSS */

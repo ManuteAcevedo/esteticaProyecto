@@ -15,6 +15,7 @@ footer {
   text-align: center;           
 }
 
-.botonesColorFooter {
-  @include boton-estilo(rgba(108, 211, 192, 0.534), 6rem);
+.iconoFooter {
+  width: 2.5rem;
+  height: auto;
 }
