@@ -5,11 +5,40 @@ header .tituloHeaderContainer h1 {
   font-weight: bold;
 }
 
+.tituloSeccion, .negrita {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(48, 62, 72);
+}
+
+.formularioConsultas input[type=text],
+.formularioConsultas input[type=email],
+.formularioConsultas textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.descripcionContenido, .descripcionProducto, .descripcionDr {
+  margin-bottom: 0.5rem;
+  color: rgb(48, 62, 72);
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
 header .tituloHeaderContainer h1 {
   color: #fff;
   background-color: rgba(177, 231, 252, 0.132);
   padding: 0.5rem;
   border-radius: 0.5rem;
+  font-weight: bold;
   font-size: 2.5rem;
 }
 
@@ -48,10 +77,11 @@ a:hover {
   text-align: center;
 }
 
-.negrita, .tituloSeccion {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: rgb(48, 62, 72);
+.negrita {
+  font-style: normal;
+  color: rgb(30, 50, 70);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .itemsLista {
@@ -70,8 +100,10 @@ main {
 .botonesColor {
   background-color: rgb(136, 198, 246);
   border: 0.5px solid rgb(154, 146, 146);
-  width: 12rem;
   font-weight: bold;
+  width: 12rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .botonesColor:hover {
@@ -86,34 +118,15 @@ main {
   background-color: rgba(105, 197, 233, 0.527);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 20rem;
-}
-
-.formularioConsultas {
-  max-width: 20rem;
   width: 100%;
   margin: 0 auto;
-  padding: 1rem;
   box-sizing: border-box;
-  margin-bottom: 3rem; 
+  margin-bottom: 3rem;
 }
 
-.formularioConsultas input[type="text"],
-.formularioConsultas input[type="email"],
-.formularioConsultas textarea {
-  width: 100%;
-  max-width: 100%;
-  padding: 0.4rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0.8rem;
-  border-radius: 0.3rem;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  resize: vertical;
-}
-
-form input[type="submit"] {
+form input[type=submit] {
   display: block;
-  margin: 0.1rem auto 0 auto; 
+  margin: 0.1rem auto 0 auto;
 }
 
 /* HEADER */
@@ -178,19 +191,30 @@ form input[type="submit"] {
 /* MAIN */
 .multimediaTam {
   width: 100%;
-  margin-bottom: 0.5rem; /* espacio debajo de la imagen */
+  margin-bottom: 0.5rem;
 }
 
 .contenedorImagen {
   width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contenedorImagen .itemsLista {
+  width: 100%;
+  text-align: left;
+  padding-left: 1.2rem;
+}
+.contenedorImagen .botonesColor {
+  margin-top: 1rem;
+  align-self: center;
 }
 
 .nombreDr {
   color: rgb(48, 62, 72);
-}
-
-.descripcionDr {
-  font-size: 1rem;
 }
 
 .precioProducto span {
@@ -200,28 +224,32 @@ form input[type="submit"] {
 
 .botonComprar {
   background-color: rgb(177, 231, 252);
-  border: 1px solid black;
+  border: 0.5px solid rgb(154, 146, 146);
   font-weight: bold;
+  width: auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid black;
   padding: 0.4rem 0.8rem;
   border-radius: 0.3rem;
-  cursor: pointer;
   white-space: nowrap;
-  transition: background-color 0.3s;
+}
+
+.descripcionDr {
+  min-height: 9rem;
 }
 
 .descripcionProducto {
-  min-height: 7rem; /* fijar altura mínima para que todas tengan espacio similar */
-  margin-bottom: 0.5rem;
-  color: rgb(48, 62, 72);
-  font-style: italic;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  min-height: 7rem;
 }
 
 .botonesContenedor {
   display: flex;
-  gap: 0.5rem; /* espacio entre botones */
-  justify-content: center; /* opcional, para centrar */
-  flex-wrap: nowrap; /* que no se pongan en columna */
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .botonConsulta {
@@ -245,10 +273,13 @@ form input[type="submit"] {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 1rem; /* separa hacia arriba */
-
+  margin-top: 1rem;
 }
 
+main > .contenedorCosas,
+main > section {
+  margin-bottom: 3rem;
+}
 
 /* FOOTER */
 footer {
@@ -258,20 +289,21 @@ footer {
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
-
   display: flex;
-  flex-wrap: wrap;               
-  justify-content: center;      
-  align-items: center;           
-  gap: 1rem;                     
-  text-align: center;           
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
 }
 
 .botonesColorFooter {
   background-color: rgba(108, 211, 192, 0.534);
   border: 0.5px solid rgb(154, 146, 146);
-  width: 6rem;
   font-weight: bold;
+  width: 6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* CONFIGURACIÓN NAVBAR */
@@ -312,7 +344,7 @@ footer {
   text-decoration: underline;
 }
 
-.navbar-collapse.show {
+.navbar-collapse {
   position: absolute;
   top: 100%;
   left: 10px;
@@ -323,13 +355,24 @@ footer {
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.588);
   z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
-/* Cuando el menú está abierto */
 .navbar-collapse.show {
-  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+  position: absolute;
+  top: 100%;
+  left: 20px;
   width: auto;
   max-width: 300px;
+  background-color: rgba(35, 32, 32, 0.875);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.588);
+  z-index: 1000;
 }
 
 /* Carrousel */
@@ -339,7 +382,7 @@ footer {
 }
 
 .carousel-caption {
-  bottom: 1.5rem; 
+  bottom: 1.5rem;
 }
 
 .carousel-item img {
@@ -349,29 +392,15 @@ footer {
 }
 
 /* MEDIA QUERIES */
-
 @media (max-width: 480px) {
   .carousel-caption {
     display: none;
   }
   #carouselSedes {
-    max-width: 90%; 
+    max-width: 90%;
   }
 }
-
 @media (max-width: 600px) {
-  .navbar-collapse.show {
-    position: absolute;
-    top: 100%;
-    left: 20px;
-    width: auto;
-    max-width: 300px;
-    background-color: rgba(35, 32, 32, 0.875);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.588);
-    z-index: 1000;
-  }
   .tituloHeaderContainer {
     position: relative;
     top: auto;
@@ -380,34 +409,45 @@ footer {
     margin-top: 5rem;
     text-align: center;
   }
-
-  footer {
-    flex-direction: column;     
+  .tituloSeccion {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    word-wrap: break-word;
+    text-align: center;
   }
-  
+  .negrita {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    text-transform: none;
+  }
+  footer {
+    flex-direction: column;
+  }
   .contenedorImagen {
-    width: 100%; /* ocupa todo el ancho disponible */
-    max-width: 15rem; /* no muy grande */
+    width: 100%;
+    max-width: 15rem;
     margin: 0.5rem auto 2rem auto;
   }
-
   .descripcionProducto {
-    min-height: auto; /* que se adapte al texto */
+    min-height: auto;
     margin-bottom: 0.5rem;
   }
-
+  .botonesColor {
+    width: 100%;
+    max-width: none;
+    font-size: 1rem;
+  }
   .botonesContenedor {
-    flex-direction: column; /* apilar botones verticalmente */
+    flex-direction: column;
     gap: 0.3rem;
     align-items: stretch;
   }
-
   .botonComprar {
-    width: 100%; /* botones anchos al 100% */
+    width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
   }
-
 }
 
 /*# sourceMappingURL=estilos.css.map */
